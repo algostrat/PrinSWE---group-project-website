@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+    
+    
+    <!-- Main script sources for our site's functionality -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Script src for password-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+    <title>Keep Safe - Learn Cyber Security </title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+    
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">Learn Cyber Security</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="part1.html">Part 1: Phishing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="part2.html">Part 2: Adware & Spyware</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="part3.html">Part 3: Artifical Intelligence</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="part4.html">Part 4: Passwords</a>
+          </li>
+            
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- WEBSITE TITLE -->
+<!-- PART 1: INFORMATION ABOUT PHISHING-->  
+<section id="part1" class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>Part 1: Phishing, getting fooled to click on a malicious link.</h2>
+        <img src="images/phishing-3390518_1280 (Medium).jpg" class="img-fluid"/>
+        <p class="lead">Phishing scams use email and text messages that appear to be from a legitimate organization you do business with or a
+                person you know. They attempt to gain your trust so you will click on a link to a fraudulent website, share private information,
+                 or open an attachment on your phone, tablet or computer. These attempts try to get a user to click on or navigatate to a link that 
+                 seems like a ligitamite web address. Words like an actual company name will be in the link but these links will not direct the user to legitmate sources.
+                </p>
+        <p class="lead">Clicking on a link or opening an attachment in one of these messages may install malware, like viruses, spyware or
+              ransomware, on your device. This is all done behind the scenes, so it is undetectable to the average user. Once the malware has been 
+              installed, it could harvest your sensitive information, send out more phishing emails to contacts in your address book or provide a 
+              scammer with remote access to your device. If you do make the mistake of clicking on a phishing link or downloading a malicious attachment,
+              follow the steps below.</p>
+        <ul>
+          <li>Disconnect Your Device</li>
+          <li>Backup Your Files</li>
+          <li>Scan Your System for Malware</li>
+          <li>Change Your Credentials</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MALICIOUS LINK GAME-->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3>Test your knowledge on malicious links</h3>
+          <p class="lead">Below you will see a list of links to popular websites. Try choosing the correct link.</p>
+            <div class="dropdown-content">
+              <div id="fake-list-items"></div>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+    
+    
+<!-- TEST YOUR LINKS SECTION-->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h3>Test links here</h3>
+        <p class="lead">
+          Enter any link here to test if it is malicious or not.
+        </p>
+
+        <form action="" method="post" id="my_form" autocomplete="off"> 
+          <label>Website</label>
+          <input type="url" name="website" id="url_to_check" value="http://"/>
+          <input type="submit" name="submit" value="Submit" />
+      </form>
+      <div id="server-results"><!-- For server results --></div>
+      <div id="upload-progress"><div class="progress-bar"></div></div> <!-- Progress bar added -->
+
+
+      <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.visibility='hidden';">&times;</span>
+      </div>     
+      <div><p class="lead">Continue to <a href="part2.html">part 2 </a> where you will learn about adware and spyware.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+</section>
+
+  
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; The Cyber Safety Group 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+    
+    
+    <!-- Main script sources for our site's functionality -->
+    <script src="js/ryan_main.js"></script>
+        
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

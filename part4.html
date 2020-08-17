@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+    
+
+  <!-- Main script sources for our site's functionality -->
+
+  <!-- jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <!-- Script src for password-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+  <title>Keep Safe - Learn Cyber Security </title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+    
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">Learn Cyber Security</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="part1.html">Part 1: Phishing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="part2.html">Part 2: Adware & Spyware</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="part3.html">Part 3: Artifical Intelligence</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="part4.html">Part 4: Passwords</a>
+          </li>
+            
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section  id="part4" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Part 4: Passwords</h2>
+          
+          <img src="images/part_4.jpg" class="img-fluid"/>
+          <p class="lead">
+            Passwords are on the frontline of keeping nearly all of your online presence safe. On most sites a password is the only thing preventing an
+            attacker from accessing all of your information. Some sites have opted for two-factor authentication methods, which are meant to supplement the login
+            process by requiring the user to respond to a text or email along with the password to allow entry. We highly suggest using two-factor
+            authentication when available as well. Below you can follow our guidelines on how to generate a strong password that can't be guessed
+            and use our own password strength indicator to precheck if a password is safe. All functions on this site are encrypted and/or done in your browser, meaning that 
+            your password cannot be itercepted through transmission or in our servers. 
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    <!-- PASSWORD STRENGTH TESTER-->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h3>Password Strength Indicator</h3>
+        <p> 
+          <ul>
+              <li>Don't use any dictionary words.</li>
+              <li>Include a mix of capital letters, lowercase letter symbols and numbers.</li>
+              <li>Long Length (12-14 characters).</li>
+              <li>Two-factor authentication.</li>
+              <li>Update passwords every 6 months.</li>
+              <li>Do not reuse passwords.</li>
+              <li>Use different passwords for different sites.</li>
+              <li>Do not share your password.</li>
+           </ul>
+        </p>  
+        <p class="lead">
+          Enter in a password to see to test its strength.
+        </p>
+        <label for="password">Enter password</label>
+        <input type="password" id="password" required>  
+        <!--<meter max="4" id="password-strength-meter"></meter>  doesn't work-->
+        <p id="password-strength-text"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHeck if password has been compromised from haveibeenpwned
+  ex url: https://api.pwnedpasswords.com/range/7ce03
+-->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>Data Breaches</h2>
+        <img src="images/part4_2.jpg" class="img-fluid"/>
+        <p class=lead>
+          Data breaches are malicious attacks on known sites with the intent of stealing and exposes the information and data of its users. 
+          This information includes credit card numbers, names, email addresses, physical addresses, and other sensitive data. Attackers will use sophisticated methods
+          such as those mentioned in <a href="part3.html">Part 3</a> to breach into websites and systems. Websites do take precaution when hosting your sensitive information.
+          When possible most secure sites will encrypt most of their users data so that only the user can decrypt but attackers have methods in order to decrypt that
+          data. Data breaches are very common, and due to the nature of how easily it is to make an online presence you may find that your information might have
+          been exposed in attack that has been publicly documented. Use our tools below to see if your email address or password has been exposed and make sure to
+          follow our instructions if it has.
+        </p>
+        <h3>Are your passwords on the web?</h3>
+        <p>Many common passwords have been compromised because of lack complexity and data breaches. 
+          Search below to see if your passwords have been compromised on the web.
+        </p>
+        <form action="" method="post" id="pwned_password" autocomplete="off"> 
+          <label>Password</label>
+          <input type="password" name="password" id="pw_to_check" value="" required/>
+          <input class="submit_pw" type="submit" name="submit" value="Search" />
+        </form>
+        <div id="pw-results"><!-- For server results --></div>
+
+        <div style="padding-top: 30px;">
+          <h3>Has your email been exposed in a hacking breach?</h3>
+          <p>Many emails and other information have been compromised in data breaches on popular websites. 
+            Search below to see if your email has been compromised is a data breach.
+          </p>
+          <form action="" method="post" id="pwned_email" autocomplete="off"> 
+            <label>Email</label>
+            <input type="email" name="email" id="email_to_check" value="" required/>
+            <input class="submit_button" type="submit" value="Search" />
+          </form>
+          <div class="append_breach">
+              <!--breach incidents get appended here-->
+          </div>
+          <div class="what_to_do">
+              <!--A description on what to do will be displayed to the user-->
+          </div> 
+          <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.visibility='hidden';">&times;</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CHeck if email has been compromised-->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; The Cyber Safety Group 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+    
+    
+    <!-- Main script sources for our site's functionality -->
+    <script src="js/ryan_main.js"></script>
+    <script src="js/password_check.js"></script>
+  
+    <!-- script that uses ajax to call php and to do 
+          breached password checker
+          and email adrress checker-->
+          <script src=js/php_calls.js></script>
+        
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+
+</body>
+
+</html>

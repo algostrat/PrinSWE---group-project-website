@@ -7,7 +7,6 @@
   <meta name="description" content="">
   <meta name="author" content="">
     
-    
     <!-- Main script sources for our site's functionality -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Script src for password-->
@@ -27,28 +26,21 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html">Learn Cyber Security</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="part1.html">Part 1: Phishing</a>
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="part2.html">Part 2: Adware & Spyware</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
-            <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="part3.html">Part 3: Artifical Intelligence</a>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="part4.html">Part 4: Passwords</a>
-          </li>
-            
         </ul>
       </div>
     </div>
@@ -59,36 +51,44 @@
 <!-- bg-primary text-white -->
   <header class="masthead">
     <div class="container text-center text-white ">
-      <h1>Welcome to Cyber Safety</h1>
-      <p class="lead">A portal designed to help keep you safe in todays online world </p>
+      <h1>Welcome to Scrolling Nav</h1>
+      <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
     </div>
   </header>
 
-<!-- ABOUT SECTION -->
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>About Cyber Safety</h2>
-          <p class="lead">This website teaches you about the basics of cyber security and how to stay safe on the web. Cybersecurity is the protection of Internet-connected systems, including hardware, software, and data from cyber attacks. It is made up of two words one is cyber and other is security. Cyber is related to the technology which contains systems, network and programs or data. Below you will see a list of the topics you will learn.</p>
-          <ul>
-            <li>Information on password strength and reliability</li>
-            <li>Information on URL spoofing/phishing</li>
-            <li>Information on avoiding adware and harmful sites</li>
-            <li>Interactive informational games</li>
-          </ul>
-          <p class="lead">Continue to <a href="part1.html">part 1 </a> where you will learn about phishing.</p>
-          </div>
-        
+<!-- TEST YOUR LINKS SECTION-->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h3>Test links here</h3>
+        <p class="lead">
+          Enter any link here to test if it is malicious or not.
+        </p>
+
+          <form action="" method="post" id="my_form" novalidate> 
+            <label>Website</label>
+            <input type="url" name="website" />
+            <input type="submit" name="submit" value="Submit Form" />
+        </form>
+        <div id="server-results"><!-- For server results --></div>
+        <div id="upload-progress"><div class="progress-bar"></div></div> <!-- Progress bar added -->
+
+
+        <div class="alert">
+          <span class="closebtn" onclick="this.parentElement.style.visibility='hidden';">&times;</span>
+          This is an alert box.
+        </div>
+
+      </div>
       </div>
     </div>
-  </section>
-
+</section>
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; The Cyber Safety Group 2020</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
     </div>
     <!-- /.container -->
   </footer>
